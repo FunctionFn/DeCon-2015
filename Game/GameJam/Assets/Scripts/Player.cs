@@ -23,8 +23,10 @@ public class Player : MonoBehaviour {
     public float stunTime;
     public float invincibilityTime;
 
-    protected float stunCountdownTimer;
+    public float stunCountdownTimer;
+    public float invincibilityCountdownTimer;
 
+    public bool bIsInvincible;
 
     float moveDirection;
 
@@ -39,22 +41,52 @@ public class Player : MonoBehaviour {
     }
 
 	void Start () {
-        
+        currentState = State.Base;
+
+        bIsInvincible = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
         moveDirection = Input.GetAxis("Horizontal");
 
-        
+
+        TimerUpdate();
 
         ControllerUpdate();
-	}
 
+        
+	}
+    void TimerUpdate()
+    {
+        stunCountdownTimer -= Time.deltaTime;
+        invincibilityCountdownTimer -= Time.deltaTime;
+
+        if (stunCountdownTimer <= 0)
+        {
+            currentState = State.Base;
+        }
+
+        if(invincibilityCountdownTimer <= 0)
+        {
+            bIsInvincible = false;
+        }
+
+
+    }
 
     void ControllerUpdate()
     {
         Move();
+
+        if (currentState == State.Jumping)
+        {
+            if (groundedCheck())
+            {
+                currentState = State.Base;
+            }
+        }
+
 
         if(Input.GetButton("Jump") && groundedCheck())
         {
@@ -70,6 +102,7 @@ public class Player : MonoBehaviour {
     void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+        currentState = State.Jumping;
     }
 
     bool groundedCheck()
@@ -93,6 +126,7 @@ public class Player : MonoBehaviour {
     public void Stun(float time)
     {
         stunCountdownTimer = time;
+        currentState = State.Stunned;
 
     }
 

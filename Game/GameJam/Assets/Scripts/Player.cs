@@ -3,7 +3,10 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
-   
+
+    public enum State : int { Base = 1, Stunned = 2, Swinging = 3, Jumping = 4, AirSwinging = 5}
+
+    public State currentState;
     public Rigidbody2D rb;
     public Transform groundedCheckC;
     public Transform groundedCheckL;
@@ -14,12 +17,29 @@ public class Player : MonoBehaviour {
 
     public float speed;
     public float jumpHeight;
+    public float damageMultiplier;
+    public float damageHop;
+
+    public float stunTime;
+    public float invincibilityTime;
+
+    protected float stunCountdownTimer;
+
 
     float moveDirection;
 
 	// Use this for initialization
-	void Start () {
 
+    private static Player _inst;
+    public static Player Inst { get { return _inst; } }
+
+    void Awake()
+    {
+        _inst = this;
+    }
+
+	void Start () {
+        
 	}
 	
 	// Update is called once per frame
@@ -60,6 +80,28 @@ public class Player : MonoBehaviour {
             return true;
 
         return false;
+    }
+
+
+    public void Damage(int damage, float stunMultiplier = 1)
+    {
+        rb.AddForce(new Vector2(-damage * damageMultiplier, damageHop));
+
+        Stun(stunTime*stunMultiplier);
+    }
+
+    public void Stun(float time)
+    {
+        stunCountdownTimer = time;
+
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.GetComponent<BaseEnemy>())
+        {
+            other.GetComponent<BaseEnemy>().Activate();
+        }
     }
 
 }

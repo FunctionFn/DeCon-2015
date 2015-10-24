@@ -10,12 +10,12 @@ public class BaseEnemy : MonoBehaviour {
     public float speed;
     public Direction dir;
 
-    public float damage;
+    public int damage;
     public float startingHealth;
 
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 	    
 	}
 	
@@ -28,4 +28,11 @@ public class BaseEnemy : MonoBehaviour {
     {
         rb.velocity = new Vector2((int)dir * speed, rb.velocity.y);
     }
+
+    public void Activate()
+    {
+        Player.Inst.Damage(damage);
+    }
+
+
 }

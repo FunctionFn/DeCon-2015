@@ -12,9 +12,7 @@ public class Box : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.W))
-		{
-			rb.AddForce(new Vector2(0, SPEED));
-		}
+			rb.AddForce(new Vector2(-SPEED, 0));
+		
 	}
 }

@@ -77,7 +77,11 @@ public class Player : MonoBehaviour {
 
     void ControllerUpdate()
     {
-        Move();
+        if(currentState != State.Stunned)
+        {
+            Move();
+        }
+        
 
         if (currentState == State.Jumping)
         {
@@ -126,13 +130,14 @@ public class Player : MonoBehaviour {
     public void Stun(float time)
     {
         stunCountdownTimer = time;
+        invincibilityCountdownTimer = invincibilityTime;
         currentState = State.Stunned;
 
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.GetComponent<BaseEnemy>())
+        if(other.GetComponent<BaseEnemy>() && !bIsInvincible)
         {
             other.GetComponent<BaseEnemy>().Activate();
         }

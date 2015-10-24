@@ -160,7 +160,7 @@ public class Player : MonoBehaviour {
         }
 
 
-        if(Input.GetButton("Jump") && groundedCheck())
+        if(Input.GetButton("Jump") && groundedCheck() && currentState != State.Stunned)
         {
             Jump();
         }

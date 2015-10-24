@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Game/GameJam/Assets/Sprites/Guppy/JumpAnimation/FishJump2.fla.meta
 guid: 3dce347e0371f0146afec481669ce1a8
 timeCreated: 1445716010
 licenseType: Pro
+=======
+guid: e5b5ca00faa92a04c91c39ef626d84b0
+timeCreated: 1445716120
+licenseType: Free
+>>>>>>> origin/master:Game/GameJam/Assets/Sprites/Guppy/JumpAnimation/FishJump2.fla.meta
 DefaultImporter:
   userData: 
   assetBundleName: 

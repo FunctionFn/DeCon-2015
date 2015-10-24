@@ -12,7 +12,7 @@ public class MoveLeft : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-			rb.AddForce(new Vector2(-SPEED, 0));
+			rb.velocity=new Vector2(-SPEED, 0);
 		
 	}
 }

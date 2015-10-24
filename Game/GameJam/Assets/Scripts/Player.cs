@@ -5,6 +5,13 @@ public class Player : MonoBehaviour {
 
    
     public Rigidbody2D rb;
+    public Transform groundedCheckC;
+    public Transform groundedCheckL;
+    public Transform groundedCheckR;
+
+    public LayerMask whatIsGroundLayer;
+    int whatIsGround;
+
 
     public float speed;
     public float jumpHeight;
@@ -13,7 +20,7 @@ public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	    
+        int whatIsGround = whatIsGroundLayer;
 	}
 	
 	// Update is called once per frame
@@ -30,7 +37,7 @@ public class Player : MonoBehaviour {
     {
         Move();
 
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButton("Jump") && groundedCheck())
         {
             Jump();
         }
@@ -46,6 +53,14 @@ public class Player : MonoBehaviour {
         rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
     }
 
-    
+    bool groundedCheck()
+    {
+        if (Physics2D.OverlapPoint(new Vector2(groundedCheckC.transform.position.x, groundedCheckC.transform.position.y), whatIsGroundLayer) != null
+            || Physics2D.OverlapPoint(new Vector2(groundedCheckL.transform.position.x, groundedCheckL.transform.position.y), whatIsGroundLayer) != null
+            || Physics2D.OverlapPoint(new Vector2(groundedCheckR.transform.position.x, groundedCheckR.transform.position.y), whatIsGroundLayer) != null)
+            return true;
+
+        return false;
+    }
 
 }

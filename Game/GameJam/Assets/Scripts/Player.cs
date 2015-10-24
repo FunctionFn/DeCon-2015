@@ -64,6 +64,9 @@ public class Player : MonoBehaviour {
 
         groundSwingTotalTime = groundSwingStartup + groundSwingActive + groundSwingCooldown;
         airSwingTotalTime = airSwingStartup + airSwingActive + airSwingCooldown;
+
+        groundSwingHitbox.enabled = false;
+        airSwingHitbox.enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -94,9 +97,13 @@ public class Player : MonoBehaviour {
 
 
 
-        if(groundSwingTimer > groundSwingCooldown)
+        if(groundSwingTimer < groundSwingStartup && groundSwingTimer > groundSwingCooldown)
         {
-
+            groundSwingHitbox.enabled = true;
+        }
+        else if (groundSwingTimer < groundSwingCooldown)
+        {
+            groundSwingHitbox.enabled = false;
         }
 
 

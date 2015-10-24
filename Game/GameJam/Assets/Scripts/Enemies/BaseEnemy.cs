@@ -13,15 +13,26 @@ public class BaseEnemy : MonoBehaviour {
     public int damage;
     public float startingHealth;
 
+    public float currentHealth;
 
 	// Use this for initialization
 	void Awake () {
 	    
 	}
+
+    void Start()
+    {
+        currentHealth = startingHealth;
+    }
 	
 	// Update is called once per frame
 	void Update () {
         MovementUpdate();
+
+        if(currentHealth <= 0)
+        {
+            Destroy(this);
+        }
 	}
 
     void MovementUpdate()
@@ -34,5 +45,9 @@ public class BaseEnemy : MonoBehaviour {
         Player.Inst.Damage(damage);
     }
 
+    public void OnHit()
+    {
+        
+    }
 
 }

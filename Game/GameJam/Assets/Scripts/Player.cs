@@ -10,7 +10,6 @@ public class Player : MonoBehaviour {
     public Transform groundedCheckR;
 
     public LayerMask whatIsGroundLayer;
-    int whatIsGround;
 
 
     public float speed;
@@ -20,7 +19,7 @@ public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        int whatIsGround = whatIsGroundLayer;
+
 	}
 	
 	// Update is called once per frame

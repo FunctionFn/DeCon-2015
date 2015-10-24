@@ -13,21 +13,39 @@ public class BaseEnemy : MonoBehaviour {
     public int damage;
     public float startingHealth;
 
+    public float knockedBackDistance;
+    public float knockedBackHop;
+
     public float currentHealth;
+
+    public float invincibilityTime;
+
+    public bool bIsInvincible;
+    public float invincibilityCountdownTimer;
 
 	// Use this for initialization
 	void Awake () {
-	    
+        currentHealth = startingHealth;
+        bIsInvincible = false;
 	}
 
     void Start()
     {
-        currentHealth = startingHealth;
+        
     }
 	
 	// Update is called once per frame
 	public void Update () {
-        MovementUpdate();
+        invincibilityCountdownTimer -= Time.deltaTime;
+
+
+        if (invincibilityCountdownTimer <= 0)
+        {
+            bIsInvincible = false;
+        }
+
+        if(!bIsInvincible)
+            MovementUpdate();
 
         if(currentHealth <= 0)
         {
@@ -48,11 +66,16 @@ public class BaseEnemy : MonoBehaviour {
     public void OnHit()
     {
         currentHealth -= Player.Inst.damage;
+
+        invincibilityCountdownTimer = invincibilityTime;
+        bIsInvincible = true;
+
+        rb.velocity = new Vector2(knockedBackDistance, knockedBackHop);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
-        if(other.GetComponent<AttackHitbox>())
+        if (other.GetComponent<AttackHitbox>() && other.GetComponent<AttackHitbox>().bIsEnabled && !bIsInvincible)
         {
             OnHit();
         }

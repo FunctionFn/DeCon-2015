@@ -11,8 +11,8 @@ public class Player : MonoBehaviour {
     public Transform groundedCheckC;
     public Transform groundedCheckL;
     public Transform groundedCheckR;
-    public Collider2D groundSwingHitbox;
-    public Collider2D airSwingHitbox;
+    public AttackHitbox groundSwingHitbox;
+    public AttackHitbox airSwingHitbox;
 
     public LayerMask whatIsGroundLayer;
 
@@ -86,8 +86,10 @@ public class Player : MonoBehaviour {
     {
         stunCountdownTimer -= Time.deltaTime;
         invincibilityCountdownTimer -= Time.deltaTime;
+        groundSwingTimer -= Time.deltaTime;
+        airSwingTimer -= Time.deltaTime;
 
-        if (stunCountdownTimer <= 0)
+        if (stunCountdownTimer <= 0 && currentState == State.Stunned)
         {
             currentState = State.Base;
         }
@@ -99,35 +101,30 @@ public class Player : MonoBehaviour {
 
 
 
-        if(groundSwingTimer < groundSwingStartup && groundSwingTimer > groundSwingCooldown)
+        if(groundSwingTimer < (groundSwingTotalTime - groundSwingStartup) && groundSwingTimer > groundSwingCooldown && !groundSwingHitbox.bIsEnabled)
         {
-            groundSwingHitbox.enabled = true;
+            groundSwingHitbox.Enable();
+            Debug.Log("Active");
         }
-        else if (groundSwingTimer < groundSwingCooldown)
+        else if (groundSwingTimer <= 0 && currentState != State.Stunned && currentState != State.AirSwinging)
         {
-            groundSwingHitbox.enabled = false;
-        }
-        else if( groundSwingTimer <= 0)
-        {
-            if(groundedCheck())
+            if (groundedCheck())
             {
                 currentState = State.Base;
             }
-            else
-            {
-                currentState = State.Jumping;
-            }
+        }
+        else if (groundSwingTimer < groundSwingCooldown)
+        {
+            groundSwingHitbox.Disable();
         }
 
-        if (airSwingTimer < airSwingStartup && airSwingTimer > airSwingCooldown)
+
+
+        if (airSwingTimer < (airSwingTotalTime - airSwingStartup) && airSwingTimer > airSwingCooldown && !airSwingHitbox.bIsEnabled)
         {
-            airSwingHitbox.enabled = true;
+            airSwingHitbox.Enable();
         }
-        else if (airSwingTimer < airSwingCooldown)
-        {
-            airSwingHitbox.enabled = false;
-        }
-        else if (airSwingTimer <= 0)
+        else if (airSwingTimer <= 0 && currentState != State.Stunned && currentState != State.Swinging)
         {
             if (groundedCheck())
             {
@@ -137,6 +134,10 @@ public class Player : MonoBehaviour {
             {
                 currentState = State.Jumping;
             }
+        }
+        else if (airSwingTimer < airSwingCooldown)
+        {
+            airSwingHitbox.Disable();
         }
 
 
@@ -166,6 +167,7 @@ public class Player : MonoBehaviour {
 
         if(Input.GetButton("Fire1") && currentState != State.Stunned && currentState != State.Swinging)
         {
+            
             if(groundedCheck())
             {
                 GroundedSwing();
@@ -174,6 +176,7 @@ public class Player : MonoBehaviour {
             {
                 AirSwing();
             }
+            currentState = State.Swinging;
         }
     }
 
@@ -225,7 +228,7 @@ public class Player : MonoBehaviour {
 
     public void AirSwing()
     {
-        groundSwingTimer = airSwingTotalTime;
+        airSwingTimer = airSwingTotalTime;
     }
 
     void OnTriggerEnter2D(Collider2D other)

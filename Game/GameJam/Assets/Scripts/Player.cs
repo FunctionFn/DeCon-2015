@@ -11,6 +11,8 @@ public class Player : MonoBehaviour {
     public Transform groundedCheckC;
     public Transform groundedCheckL;
     public Transform groundedCheckR;
+    public Collider2D groundSwingHitbox;
+    public Collider2D airSwingHitbox;
 
     public LayerMask whatIsGroundLayer;
 
@@ -25,6 +27,21 @@ public class Player : MonoBehaviour {
 
     public float stunCountdownTimer;
     public float invincibilityCountdownTimer;
+
+    public float groundSwingStartup;
+    public float groundSwingActive;
+    public float groundSwingCooldown;
+
+    float groundSwingTotalTime;
+
+    public float airSwingStartup;
+    public float airSwingActive;
+    public float airSwingCooldown;
+
+    float airSwingTotalTime;
+
+    public float groundSwingTimer;
+    public float airSwingTimer;
 
     public bool bIsInvincible;
 
@@ -44,6 +61,12 @@ public class Player : MonoBehaviour {
         currentState = State.Base;
 
         bIsInvincible = false;
+
+        groundSwingTotalTime = groundSwingStartup + groundSwingActive + groundSwingCooldown;
+        airSwingTotalTime = airSwingStartup + airSwingActive + airSwingCooldown;
+
+        groundSwingHitbox.enabled = false;
+        airSwingHitbox.enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -73,11 +96,26 @@ public class Player : MonoBehaviour {
         }
 
 
+
+        if(groundSwingTimer < groundSwingStartup && groundSwingTimer > groundSwingCooldown)
+        {
+            groundSwingHitbox.enabled = true;
+        }
+        else if (groundSwingTimer < groundSwingCooldown)
+        {
+            groundSwingHitbox.enabled = false;
+        }
+
+
     }
 
     void ControllerUpdate()
     {
-        Move();
+        if(currentState != State.Stunned)
+        {
+            Move();
+        }
+        
 
         if (currentState == State.Jumping)
         {
@@ -91,6 +129,18 @@ public class Player : MonoBehaviour {
         if(Input.GetButton("Jump") && groundedCheck())
         {
             Jump();
+        }
+
+        if(Input.GetButton("Fire1") && currentState != State.Stunned)
+        {
+            if(groundedCheck())
+            {
+                GroundedSwing();
+            }
+            else
+            {
+                AirSwing();
+            }
         }
     }
 
@@ -118,6 +168,7 @@ public class Player : MonoBehaviour {
 
     public void Damage(int damage, float stunMultiplier = 1)
     {
+        rb.velocity = new Vector2(0, 0);
         rb.AddForce(new Vector2(-damage * damageMultiplier, damageHop));
 
         Stun(stunTime*stunMultiplier);
@@ -126,13 +177,27 @@ public class Player : MonoBehaviour {
     public void Stun(float time)
     {
         stunCountdownTimer = time;
+        invincibilityCountdownTimer = invincibilityTime;
+     
         currentState = State.Stunned;
+        bIsInvincible = true;
+
+    }
+
+    public void GroundedSwing()
+    {
+        groundSwingTimer = groundSwingTotalTime;
+
+    }
+
+    public void AirSwing()
+    {
 
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.GetComponent<BaseEnemy>())
+        if(other.GetComponent<BaseEnemy>() && !bIsInvincible)
         {
             other.GetComponent<BaseEnemy>().Activate();
         }

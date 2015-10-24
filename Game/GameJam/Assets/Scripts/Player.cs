@@ -243,4 +243,12 @@ public class Player : MonoBehaviour {
         }
     }
 
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.GetComponent<DeadEnemy>() && !bIsInvincible)
+        {
+            other.gameObject.GetComponent<DeadEnemy>().Activate();
+        }
+    }
+
 }

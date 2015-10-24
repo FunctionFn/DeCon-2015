@@ -7,7 +7,7 @@ public class DeadEnemy : MonoBehaviour {
 
     public Vector2 launchSpeed;
 
-    public float value;
+    public int value;
 
 
 	// Use this for initialization
@@ -24,5 +24,12 @@ public class DeadEnemy : MonoBehaviour {
     {
         value = val;
 
+    }
+
+    public void Activate()
+    {
+        GameController.Inst.AddScore(value);
+
+        Destroy(gameObject);
     }
 }

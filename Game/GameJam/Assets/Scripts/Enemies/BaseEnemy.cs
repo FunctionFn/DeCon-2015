@@ -52,8 +52,8 @@ public class BaseEnemy : MonoBehaviour {
 
         if(currentHealth <= 0)
         {
-            Instantiate(deadCoin, transform.position, Quaternion.identity);
-            //go.GetComponent<DeadEnemy>().SetValue(bounty);
+            GameObject go = (GameObject)Instantiate(deadCoin, transform.position, Quaternion.identity);
+            go.GetComponent<DeadEnemy>().SetValue(bounty);
             Destroy(this.gameObject);
         }
 	}

@@ -6,7 +6,7 @@ public class BaseEnemy : MonoBehaviour {
     public enum Direction : int { Left = -1, Right = 1};
 
     public Rigidbody2D rb;
-    public DeadEnemy deadCoin;
+    public GameObject deadCoin;
 
     public float speed;
     public Direction dir;
@@ -52,8 +52,8 @@ public class BaseEnemy : MonoBehaviour {
 
         if(currentHealth <= 0)
         {
-            GameObject go = (GameObject)Instantiate(deadCoin, transform.position, Quaternion.identity);
-            go.GetComponent<DeadEnemy>().SetValue(bounty);
+            Instantiate(deadCoin, transform.position, Quaternion.identity);
+            //go.GetComponent<DeadEnemy>().SetValue(bounty);
             Destroy(this.gameObject);
         }
 	}

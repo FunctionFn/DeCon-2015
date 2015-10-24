@@ -45,6 +45,8 @@ public class Player : MonoBehaviour {
 
     public bool bIsInvincible;
 
+    public float damage;
+
     float moveDirection;
 
 	// Use this for initialization
@@ -105,6 +107,37 @@ public class Player : MonoBehaviour {
         {
             groundSwingHitbox.enabled = false;
         }
+        else if( groundSwingTimer <= 0)
+        {
+            if(groundedCheck())
+            {
+                currentState = State.Base;
+            }
+            else
+            {
+                currentState = State.Jumping;
+            }
+        }
+
+        if (airSwingTimer < airSwingStartup && airSwingTimer > airSwingCooldown)
+        {
+            airSwingHitbox.enabled = true;
+        }
+        else if (airSwingTimer < airSwingCooldown)
+        {
+            airSwingHitbox.enabled = false;
+        }
+        else if (airSwingTimer <= 0)
+        {
+            if (groundedCheck())
+            {
+                currentState = State.Base;
+            }
+            else
+            {
+                currentState = State.Jumping;
+            }
+        }
 
 
     }
@@ -131,7 +164,7 @@ public class Player : MonoBehaviour {
             Jump();
         }
 
-        if(Input.GetButton("Fire1") && currentState != State.Stunned)
+        if(Input.GetButton("Fire1") && currentState != State.Stunned && currentState != State.Swinging)
         {
             if(groundedCheck())
             {
@@ -192,7 +225,7 @@ public class Player : MonoBehaviour {
 
     public void AirSwing()
     {
-
+        groundSwingTimer = airSwingTotalTime;
     }
 
     void OnTriggerEnter2D(Collider2D other)

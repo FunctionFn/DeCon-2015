@@ -31,7 +31,7 @@ public class BaseEnemy : MonoBehaviour {
 
         if(currentHealth <= 0)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
 	}
 
@@ -47,7 +47,14 @@ public class BaseEnemy : MonoBehaviour {
 
     public void OnHit()
     {
-        
+        currentHealth -= Player.Inst.damage;
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.GetComponent<AttackHitbox>())
+        {
+            OnHit();
+        }
+    }
 }

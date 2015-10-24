@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Game/GameJam/Assets/Sprites/Backgrounds/Block.png.meta
 guid: 3cb07ad9ec6afc046b0db22cd2e67c11
 timeCreated: 1445708713
 licenseType: Free
+=======
+guid: 5743e21c8db9f8c418c1ac329e339a2b
+timeCreated: 1445705912
+licenseType: Pro
+>>>>>>> origin/master:Game/GameJam/Assets/Sprites/Backgrounds/Block.png.meta
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2

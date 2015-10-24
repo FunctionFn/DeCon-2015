@@ -36,4 +36,9 @@ public class GameController : MonoBehaviour {
         combo += combo;
 
     }
+
+    public void ResetCombo()
+    {
+        combo = 1;
+    }
 }

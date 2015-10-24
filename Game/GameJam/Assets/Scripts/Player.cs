@@ -237,7 +237,7 @@ public class Player : MonoBehaviour {
         {
             other.GetComponent<BaseEnemy>().Activate();
         }
-        else if (other.GetComponent<Hazards>() && !bIsInvincible)
+        else if (other.GetComponent<Hazards>())
         {
             other.GetComponent<Hazards>().Activate();
         }

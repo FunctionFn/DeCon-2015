@@ -1,0 +1,473 @@
+fileFormatVersion: 2
+guid: d35398fdce2efa348bf62036ec31ecdd
+timeCreated: 1445793216
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SPRITESHEETidolair_0
+    21300002: SPRITESHEETidolair_1
+    21300004: SPRITESHEETidolair_2
+    21300006: SPRITESHEETidolair_3
+    21300008: SPRITESHEETidolair_4
+    21300010: SPRITESHEETidolair_5
+    21300012: SPRITESHEETidolair_6
+    21300014: SPRITESHEETidolair_7
+    21300016: SPRITESHEETidolair_8
+    21300018: SPRITESHEETidolair_9
+    21300020: SPRITESHEETidolair_10
+    21300022: SPRITESHEETidolair_11
+    21300024: SPRITESHEETidolair_12
+    21300026: SPRITESHEETidolair_13
+    21300028: SPRITESHEETidolair_14
+    21300030: SPRITESHEETidolair_15
+    21300032: SPRITESHEETidolair_16
+    21300034: SPRITESHEETidolair_17
+    21300036: SPRITESHEETidolair_18
+    21300038: SPRITESHEETidolair_19
+    21300040: SPRITESHEETidolair_20
+    21300042: SPRITESHEETidolair_21
+    21300044: SPRITESHEETidolair_22
+    21300046: SPRITESHEETidolair_23
+    21300048: SPRITESHEETidolair_24
+    21300050: SPRITESHEETidolair_25
+    21300052: SPRITESHEETidolair_26
+    21300054: SPRITESHEETidolair_27
+    21300056: SPRITESHEETidolair_28
+    21300058: SPRITESHEETidolair_29
+    21300060: SPRITESHEETidolair_30
+    21300062: SPRITESHEETidolair_31
+    21300064: SPRITESHEETidolair_32
+    21300066: SPRITESHEETidolair_33
+    21300068: SPRITESHEETidolair_34
+    21300070: SPRITESHEETidolair_35
+    21300072: SPRITESHEETidolair_36
+    21300074: SPRITESHEETidolair_37
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SPRITESHEETidolair_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7454
+        width: 970
+        height: 738
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_1
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 7454
+        width: 976
+        height: 738
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_2
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 7446
+        width: 964
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_3
+      rect:
+        serializedVersion: 2
+        x: 2982
+        y: 7440
+        width: 964
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6674
+        width: 958
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_5
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 6674
+        width: 964
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_6
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 6670
+        width: 972
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_7
+      rect:
+        serializedVersion: 2
+        x: 2966
+        y: 6670
+        width: 976
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5894
+        width: 942
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_9
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 5894
+        width: 944
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_10
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 5902
+        width: 932
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_11
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 5902
+        width: 932
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5118
+        width: 970
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_13
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 5118
+        width: 976
+        height: 754
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_14
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 5118
+        width: 964
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_15
+      rect:
+        serializedVersion: 2
+        x: 2982
+        y: 5118
+        width: 970
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4346
+        width: 958
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_17
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 4346
+        width: 964
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_18
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 4342
+        width: 972
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_19
+      rect:
+        serializedVersion: 2
+        x: 2966
+        y: 4342
+        width: 976
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3566
+        width: 942
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_21
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 3566
+        width: 944
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_22
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 3574
+        width: 932
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_23
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 3574
+        width: 932
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2790
+        width: 970
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_25
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 2790
+        width: 976
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_26
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 2784
+        width: 960
+        height: 754
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_27
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 2790
+        width: 966
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2018
+        width: 962
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_29
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 2018
+        width: 964
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_30
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 2014
+        width: 972
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_31
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 2014
+        width: 976
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1238
+        width: 942
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_33
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 1238
+        width: 944
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_34
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 1246
+        width: 932
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_35
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 1246
+        width: 932
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 462
+        width: 970
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETidolair_37
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 462
+        width: 976
+        height: 754
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -3,12 +3,12 @@ using System.Collections;
 
 public class ProjectileEnemy : BaseEnemy {
     public GameObject projectile;
-    protected float spawnCooldown;
-    protected float timeUntilSpawn;
+    public float spawnCooldown;
+    private float timeUntilSpawn;
     // Use this for initialization
     void Awake()
     {
-        spawnCooldown = 1;
+        spawnCooldown = 5;
         timeUntilSpawn = spawnCooldown;
     }
 

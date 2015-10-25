@@ -28,6 +28,7 @@ public class Player : MonoBehaviour {
 
     public AudioClip hitplayersound;
     public AudioClip hazardsound;
+    public AudioClip whiffsound;
 
     public float speed;
     public float speedIncrement;
@@ -208,6 +209,7 @@ public class Player : MonoBehaviour {
             {
                 GroundedSwing();
                 currentState = State.Swinging;
+                AudioSource.PlayClipAtPoint(whiffsound, transform.position);
                 anim.SetInteger("State", (int)currentState);
                 
             }
@@ -215,6 +217,7 @@ public class Player : MonoBehaviour {
             {
                 AirSwing();
                 currentState = State.AirSwinging;
+                AudioSource.PlayClipAtPoint(whiffsound, transform.position);
                 anim.SetInteger("State", (int)currentState);
             }
             

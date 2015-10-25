@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: a30398e704a16d44892d4d30d46e66a3
+timeCreated: 1445747237
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GoldCoin_0
+    21300002: GoldCoin_1
+    21300004: GoldCoin_2
+    21300006: GoldCoin_3
+    21300008: GoldCoin_4
+    21300010: GoldCoin_5
+    21300012: GoldCoin_6
+    21300014: GoldCoin_7
+    21300016: GoldCoin_8
+    21300018: GoldCoin_9
+    21300020: GoldCoin_10
+    21300022: GoldCoin_11
+    21300024: GoldCoin_12
+    21300026: GoldCoin_13
+    21300028: GoldCoin_14
+    21300030: GoldCoin_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: GoldCoin_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3216
+        width: 457
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_1
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 3197
+        width: 560
+        height: 899
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_2
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 3160
+        width: 946
+        height: 936
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_3
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 3185
+        width: 879
+        height: 911
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_4
+      rect:
+        serializedVersion: 2
+        x: 2945
+        y: 3208
+        width: 840
+        height: 888
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2279
+        width: 856
+        height: 857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_6
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 2296
+        width: 820
+        height: 839
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_7
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 2277
+        width: 596
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_8
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 2257
+        width: 510
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_9
+      rect:
+        serializedVersion: 2
+        x: 2889
+        y: 2224
+        width: 511
+        height: 911
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 879
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_11
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1293
+        width: 842
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_12
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 1319
+        width: 802
+        height: 881
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_13
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 1349
+        width: 854
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 427
+        width: 849
+        height: 826
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoldCoin_15
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 399
+        width: 596
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

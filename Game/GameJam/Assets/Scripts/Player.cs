@@ -29,6 +29,7 @@ public class Player : MonoBehaviour {
     public AudioClip hitplayersound;
     public AudioClip hazardsound;
     public AudioClip whiffsound;
+    public AudioClip pickupsound;
 
     public float speed;
     public float speedIncrement;
@@ -317,6 +318,7 @@ public class Player : MonoBehaviour {
         if (other.gameObject.GetComponent<DeadEnemy>() && !bIsInvincible)
         {
             other.gameObject.GetComponent<DeadEnemy>().Activate();
+            AudioSource.PlayClipAtPoint(pickupsound, transform.position);
             GameController.Inst.AddCombo(1);
         }
     }

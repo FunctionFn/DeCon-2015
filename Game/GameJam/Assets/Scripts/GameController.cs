@@ -40,7 +40,6 @@ public class GameController : MonoBehaviour {
     public void AddCombo(int co)
     {
         combo += co;
-        Debug.Log(combo);
     }
 
     public void ResetCombo()

@@ -164,11 +164,14 @@ public class Player : MonoBehaviour {
             if (groundedCheck())
             {
                 currentState = State.Base;
+                
             }
             else
             {
                 currentState = State.Jumping;
+                
             }
+            anim.SetInteger("State", (int)currentState);
         }
         else if (airSwingTimer < airSwingCooldown)
         {

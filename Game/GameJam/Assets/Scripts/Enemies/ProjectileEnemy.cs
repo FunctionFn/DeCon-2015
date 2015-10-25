@@ -8,8 +8,8 @@ public class ProjectileEnemy : BaseEnemy {
     // Use this for initialization
     void Awake()
     {
-        spawnCooldown = 5;
-        timeUntilSpawn = spawnCooldown;
+        
+        timeUntilSpawn = 0;
     }
 
     // Update is called once per frame

@@ -271,12 +271,14 @@ public class Player : MonoBehaviour {
         }
         else if (other.GetComponent<Hazards>())
         {
-            other.GetComponent<Hazards>().Activate();
+            if(!other.GetComponent<MoveLeft>() || (other.GetComponent<MoveLeft>() && !bIsInvincible))
+                other.GetComponent<Hazards>().Activate();
         }
         else if (other.GetComponent<DeathBox>())
         {
             Kill();
         }
+        
     }
 
     void OnCollisionEnter2D(Collision2D other)

@@ -7,7 +7,7 @@ public class BaseEnemy : MonoBehaviour {
 
     public Rigidbody2D rb;
     public GameObject deadCoin;
-
+    public AudioClip[] hitsounds;
     public float speed;
     public Direction dir;
 
@@ -74,7 +74,7 @@ public class BaseEnemy : MonoBehaviour {
 
         invincibilityCountdownTimer = invincibilityTime;
         bIsInvincible = true;
-
+        AudioSource.PlayClipAtPoint(hitsounds[Random.Range(0, 3)], transform.position);
         rb.velocity = new Vector2(knockedBackDistance, knockedBackHop);
     }
 

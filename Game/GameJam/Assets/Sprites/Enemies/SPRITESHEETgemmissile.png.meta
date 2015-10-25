@@ -1,15 +1,18 @@
 fileFormatVersion: 2
-guid: 548883a13b5559d43aa64a01bc192ca4
-timeCreated: 1445796711
+guid: 9d1d61a8bfa5cc447918c5fe9f9c62b1
+timeCreated: 1445796861
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SPRITESHEETgemfloat_0
-    21300002: SPRITESHEETgemfloat_1
-    21300004: SPRITESHEETgemfloat_2
-    21300006: SPRITESHEETgemfloat_3
-    21300008: SPRITESHEETgemfloat_4
-    21300010: SPRITESHEETgemfloat_5
+    21300000: SPRITESHEETgemmissile_0
+    21300002: SPRITESHEETgemmissile_1
+    21300004: SPRITESHEETgemmissile_2
+    21300006: SPRITESHEETgemmissile_3
+    21300008: SPRITESHEETgemmissile_4
+    21300010: SPRITESHEETgemmissile_5
+    21300012: SPRITESHEETgemmissile_6
+    21300014: SPRITESHEETgemmissile_7
+    21300016: SPRITESHEETgemmissile_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -55,63 +58,93 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: SPRITESHEETgemfloat_0
+    - name: SPRITESHEETgemmissile_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 7245
-        width: 1299
-        height: 947
+        y: 1724
+        width: 915
+        height: 324
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SPRITESHEETgemfloat_1
+    - name: SPRITESHEETgemmissile_1
       rect:
         serializedVersion: 2
-        x: 1310
-        y: 7311
-        width: 1321
-        height: 881
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 34, w: 0}
-    - name: SPRITESHEETgemfloat_2
-      rect:
-        serializedVersion: 2
-        x: 2609
-        y: 7256
-        width: 1387
-        height: 936
+        x: 915
+        y: 1724
+        width: 1119
+        height: 324
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SPRITESHEETgemfloat_3
+    - name: SPRITESHEETgemmissile_2
       rect:
         serializedVersion: 2
-        x: 17
-        y: 6350
-        width: 1274
-        height: 925
+        x: 0
+        y: 1402
+        width: 919
+        height: 322
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SPRITESHEETgemfloat_4
+    - name: SPRITESHEETgemmissile_3
       rect:
         serializedVersion: 2
-        x: 1291
-        y: 6324
-        width: 1300
-        height: 991
+        x: 919
+        y: 1406
+        width: 1119
+        height: 314
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SPRITESHEETgemfloat_5
+    - name: SPRITESHEETgemmissile_4
       rect:
         serializedVersion: 2
-        x: 2618
-        y: 6310
-        width: 1367
-        height: 979
+        x: 0
+        y: 1067
+        width: 948
+        height: 347
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETgemmissile_5
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1076
+        width: 1090
+        height: 338
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETgemmissile_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 741
+        width: 939
+        height: 326
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETgemmissile_7
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 716
+        width: 1077
+        height: 351
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETgemmissile_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 394
+        width: 919
+        height: 347
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

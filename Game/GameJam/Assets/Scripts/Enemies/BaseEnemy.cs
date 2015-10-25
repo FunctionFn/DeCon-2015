@@ -8,7 +8,6 @@ public class BaseEnemy : MonoBehaviour {
     public Rigidbody2D rb;
     public GameObject deadCoin;
     public AudioClip[] hitsounds;
-    public AudioClip[] whiffsounds;
     public float speed;
     public Direction dir;
 
@@ -89,7 +88,7 @@ public class BaseEnemy : MonoBehaviour {
         }
         else
         {
-            AudioSource.PlayClipAtPoint(whiffsounds[Random.Range(0, 3)], transform.position);
+            
         }
     }
 }

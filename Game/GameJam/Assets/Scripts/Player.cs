@@ -318,7 +318,7 @@ public class Player : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.GetComponent<DeadEnemy>() && !bIsInvincible)
+        if (other.gameObject.GetComponent<DeadEnemy>())
         {
             other.gameObject.GetComponent<DeadEnemy>().Activate();
             AudioSource.PlayClipAtPoint(pickupsound, transform.position);

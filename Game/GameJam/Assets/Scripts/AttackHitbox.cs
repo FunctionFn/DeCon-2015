@@ -18,7 +18,7 @@ public class AttackHitbox : MonoBehaviour {
     public void Enable()
     {
         bIsEnabled = true;
-        gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        //gameObject.GetComponent<SpriteRenderer>().enabled = true;
     }
 
     public void Disable()

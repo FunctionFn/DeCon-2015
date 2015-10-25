@@ -34,11 +34,12 @@ public class GameController : MonoBehaviour {
     public void AddCombo(int co)
     {
         combo += combo;
-
+        GUILayout.Label("Combo: " + combo);
     }
 
     public void ResetCombo()
     {
         combo = 1;
+        GUILayout.Label("Combo: "+combo);
     }
 }

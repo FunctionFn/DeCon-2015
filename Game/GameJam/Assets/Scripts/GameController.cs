@@ -18,7 +18,7 @@ public class GameController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+        
 	}
 	
 	// Update is called once per frame
@@ -34,12 +34,11 @@ public class GameController : MonoBehaviour {
     public void AddCombo(int co)
     {
         combo += combo;
-        GUILayout.Label("Combo: " + combo);
+        Debug.Log(combo);
     }
 
     public void ResetCombo()
     {
         combo = 1;
-        GUILayout.Label("Combo: "+combo);
     }
 }

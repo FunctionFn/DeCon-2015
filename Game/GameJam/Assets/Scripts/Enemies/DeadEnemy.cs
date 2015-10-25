@@ -37,4 +37,10 @@ public class DeadEnemy : MonoBehaviour {
 
         Destroy(gameObject);
     }
+
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+
+    }
 }

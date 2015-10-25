@@ -16,4 +16,10 @@ public class Hazards : MonoBehaviour {
     {
         Player.Inst.Damage(damage);
     }
+
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+
+    }
 }

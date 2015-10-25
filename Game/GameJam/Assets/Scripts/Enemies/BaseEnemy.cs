@@ -91,4 +91,10 @@ public class BaseEnemy : MonoBehaviour {
             
         }
     }
+
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+
+    }
 }

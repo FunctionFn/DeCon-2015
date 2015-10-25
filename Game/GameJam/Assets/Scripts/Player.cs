@@ -11,6 +11,7 @@ public class Player : MonoBehaviour {
     public Transform groundedCheckC;
     public Transform groundedCheckL;
     public Transform groundedCheckR;
+
     public AttackHitbox groundSwingHitbox;
     public AttackHitbox airSwingHitbox;
 
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour {
 
 
     public float speed;
+    public float speedIncrement;
     public float jumpHeight;
     public float damageMultiplier;
     public float damageHop;
@@ -30,15 +32,19 @@ public class Player : MonoBehaviour {
 
     public float groundSwingStartup;
     public float groundSwingActive;
+    //public float initialGroundSwingCooldown;
     public float groundSwingCooldown;
 
     float groundSwingTotalTime;
 
     public float airSwingStartup;
     public float airSwingActive;
+    //public float initialAirSwingCooldown;
     public float airSwingCooldown;
 
     float airSwingTotalTime;
+
+    public float CoolDownReductionOnHit;
 
     public float groundSwingTimer;
     public float airSwingTimer;
@@ -64,6 +70,9 @@ public class Player : MonoBehaviour {
 
         bIsInvincible = false;
 
+        //groundSwingCooldown = initialAirSwingCooldown;
+        //airSwingCooldown = initialAirSwingCooldown;
+
         groundSwingTotalTime = groundSwingStartup + groundSwingActive + groundSwingCooldown;
         airSwingTotalTime = airSwingStartup + airSwingActive + airSwingCooldown;
 
@@ -74,7 +83,7 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         moveDirection = Input.GetAxis("Horizontal");
-
+        speed += speedIncrement;
 
         TimerUpdate();
 
@@ -108,6 +117,8 @@ public class Player : MonoBehaviour {
         }
         else if (groundSwingTimer <= 0 && currentState != State.Stunned && currentState != State.AirSwinging)
         {
+            groundSwingHitbox.Disable();
+            //groundSwingCooldown = initialAirSwingCooldown;
             if (groundedCheck())
             {
                 currentState = State.Base;
@@ -116,6 +127,7 @@ public class Player : MonoBehaviour {
         else if (groundSwingTimer < groundSwingCooldown)
         {
             groundSwingHitbox.Disable();
+            //groundSwingCooldown = initialAirSwingCooldown;
         }
 
 
@@ -126,6 +138,9 @@ public class Player : MonoBehaviour {
         }
         else if (airSwingTimer <= 0 && currentState != State.Stunned && currentState != State.Swinging)
         {
+            //airSwingCooldown = initialAirSwingCooldown;
+            airSwingHitbox.Disable();
+
             if (groundedCheck())
             {
                 currentState = State.Base;
@@ -138,6 +153,8 @@ public class Player : MonoBehaviour {
         else if (airSwingTimer < airSwingCooldown)
         {
             airSwingHitbox.Disable();
+            //airSwingCooldown = initialAirSwingCooldown;
+
         }
 
 
@@ -231,6 +248,20 @@ public class Player : MonoBehaviour {
         airSwingTimer = airSwingTotalTime;
     }
 
+    public void ReduceCoolDown()
+    {
+        groundSwingTimer -= CoolDownReductionOnHit;
+        airSwingTimer -= CoolDownReductionOnHit;
+
+        //groundSwingCooldown = initialGroundSwingCooldown - CoolDownReductionOnHit;
+        //airSwingCooldown = initialAirSwingCooldown - CoolDownReductionOnHit;
+    }
+
+    public void Kill()
+    {
+        Application.LoadLevel("level1");
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.GetComponent<BaseEnemy>() && !bIsInvincible)
@@ -240,6 +271,10 @@ public class Player : MonoBehaviour {
         else if (other.GetComponent<Hazards>())
         {
             other.GetComponent<Hazards>().Activate();
+        }
+        else if (other.GetComponent<DeathBox>())
+        {
+            Kill();
         }
     }
 

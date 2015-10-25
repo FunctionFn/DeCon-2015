@@ -82,6 +82,7 @@ public class BaseEnemy : MonoBehaviour {
     {
         if (other.GetComponent<AttackHitbox>() && other.GetComponent<AttackHitbox>().bIsEnabled && !bIsInvincible)
         {
+            Player.Inst.ReduceCoolDown();
             OnHit();
         }
     }

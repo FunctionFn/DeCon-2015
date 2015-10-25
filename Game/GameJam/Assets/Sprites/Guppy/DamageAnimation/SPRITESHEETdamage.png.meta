@@ -1,9 +1,28 @@
 fileFormatVersion: 2
 guid: c48660eab15d9314e96ed0ed56c94e51
-timeCreated: 1445785563
+timeCreated: 1445786168
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: SPRITESHEETdamage_0
+    21300002: SPRITESHEETdamage_1
+    21300004: SPRITESHEETdamage_2
+    21300006: SPRITESHEETdamage_3
+    21300008: SPRITESHEETdamage_4
+    21300010: SPRITESHEETdamage_5
+    21300012: SPRITESHEETdamage_6
+    21300014: SPRITESHEETdamage_7
+    21300016: SPRITESHEETdamage_8
+    21300018: SPRITESHEETdamage_9
+    21300020: SPRITESHEETdamage_10
+    21300022: SPRITESHEETdamage_11
+    21300024: SPRITESHEETdamage_12
+    21300026: SPRITESHEETdamage_13
+    21300028: SPRITESHEETdamage_14
+    21300030: SPRITESHEETdamage_15
+    21300032: SPRITESHEETdamage_16
+    21300034: SPRITESHEETdamage_17
+    21300036: SPRITESHEETdamage_18
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +49,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +67,197 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: SPRITESHEETdamage_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7434
+        width: 1022
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_1
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 7506
+        width: 948
+        height: 686
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_2
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 7346
+        width: 832
+        height: 846
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_3
+      rect:
+        serializedVersion: 2
+        x: 2878
+        y: 7342
+        width: 832
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6462
+        width: 834
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_5
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 6470
+        width: 832
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_6
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 6462
+        width: 834
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_7
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 6462
+        width: 832
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5590
+        width: 830
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_9
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 5582
+        width: 832
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_10
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 5582
+        width: 836
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_11
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 5590
+        width: 828
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4702
+        width: 830
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_13
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 4702
+        width: 836
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_14
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 4710
+        width: 832
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_15
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 4702
+        width: 828
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3822
+        width: 834
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_17
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 3986
+        width: 952
+        height: 692
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETdamage_18
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 3914
+        width: 1024
+        height: 764
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

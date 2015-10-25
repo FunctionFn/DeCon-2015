@@ -1,9 +1,33 @@
 fileFormatVersion: 2
 guid: 2b266efe0f817924cbb4823da84cd06c
-timeCreated: 1445785617
+timeCreated: 1445786250
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: SPRITESHEETrun_0
+    21300002: SPRITESHEETrun_1
+    21300004: SPRITESHEETrun_2
+    21300006: SPRITESHEETrun_3
+    21300008: SPRITESHEETrun_4
+    21300010: SPRITESHEETrun_5
+    21300012: SPRITESHEETrun_6
+    21300014: SPRITESHEETrun_7
+    21300016: SPRITESHEETrun_8
+    21300018: SPRITESHEETrun_9
+    21300020: SPRITESHEETrun_10
+    21300022: SPRITESHEETrun_11
+    21300024: SPRITESHEETrun_12
+    21300026: SPRITESHEETrun_13
+    21300028: SPRITESHEETrun_14
+    21300030: SPRITESHEETrun_15
+    21300032: SPRITESHEETrun_16
+    21300034: SPRITESHEETrun_17
+    21300036: SPRITESHEETrun_18
+    21300038: SPRITESHEETrun_19
+    21300040: SPRITESHEETrun_20
+    21300042: SPRITESHEETrun_21
+    21300044: SPRITESHEETrun_22
+    21300046: SPRITESHEETrun_23
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +54,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +72,247 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: SPRITESHEETrun_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7450
+        width: 1066
+        height: 742
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_1
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 7430
+        width: 1060
+        height: 762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_2
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 7446
+        width: 1060
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6622
+        width: 1026
+        height: 784
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_4
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 6650
+        width: 1028
+        height: 756
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_5
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 6674
+        width: 1016
+        height: 732
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5870
+        width: 1008
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_7
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 5890
+        width: 1024
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_8
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 5906
+        width: 1024
+        height: 692
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5186
+        width: 1014
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_10
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 5142
+        width: 1008
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_11
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 5126
+        width: 1004
+        height: 716
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4378
+        width: 1046
+        height: 724
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_13
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 4342
+        width: 1084
+        height: 756
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_14
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 4336
+        width: 1012
+        height: 766
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3526
+        width: 1010
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_16
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 3546
+        width: 1012
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_17
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 3582
+        width: 986
+        height: 732
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_18
+      rect:
+        serializedVersion: 2
+        x: 3078
+        y: 3602
+        width: 988
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2794
+        width: 990
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_20
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 2830
+        width: 980
+        height: 674
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_21
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 2846
+        width: 956
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_22
+      rect:
+        serializedVersion: 2
+        x: 3002
+        y: 2830
+        width: 968
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETrun_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2058
+        width: 1026
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

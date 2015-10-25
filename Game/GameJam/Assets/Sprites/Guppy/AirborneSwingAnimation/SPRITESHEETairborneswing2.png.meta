@@ -1,9 +1,20 @@
 fileFormatVersion: 2
 guid: e2b04b76660d0624892f69e663411533
-timeCreated: 1445785569
+timeCreated: 1445786040
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: SPRITESHEETairborneswing2_0
+    21300002: SPRITESHEETairborneswing2_1
+    21300004: SPRITESHEETairborneswing2_2
+    21300006: SPRITESHEETairborneswing2_3
+    21300008: SPRITESHEETairborneswing2_4
+    21300010: SPRITESHEETairborneswing2_5
+    21300012: SPRITESHEETairborneswing2_6
+    21300014: SPRITESHEETairborneswing2_7
+    21300016: SPRITESHEETairborneswing2_8
+    21300018: SPRITESHEETairborneswing2_9
+    21300020: SPRITESHEETairborneswing2_10
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +41,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +59,117 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: SPRITESHEETairborneswing2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7386
+        width: 986
+        height: 806
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETairborneswing2_1
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 7358
+        width: 964
+        height: 834
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETairborneswing2_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6474
+        width: 950
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETairborneswing2_3
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 6530
+        width: 1000
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETairborneswing2_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5738
+        width: 1046
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETairborneswing2_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4046
+        width: 1578
+        height: 1664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETairborneswing2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2602
+        width: 1670
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETairborneswing2_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1802
+        width: 1426
+        height: 772
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETairborneswing2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 1182
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETairborneswing2_9
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 894
+        width: 640
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SPRITESHEETairborneswing2_10
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 10
+        width: 988
+        height: 808
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

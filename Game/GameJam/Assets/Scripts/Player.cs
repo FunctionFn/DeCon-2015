@@ -12,6 +12,15 @@ public class Player : MonoBehaviour {
     public Transform groundedCheckL;
     public Transform groundedCheckR;
 
+    public Animator anim;
+
+    public AnimationClip run;
+    public AnimationClip jump;
+    public AnimationClip fall;
+    public AnimationClip stun;
+    public AnimationClip swing;
+    public AnimationClip airSwing;
+
     public AttackHitbox groundSwingHitbox;
     public AttackHitbox airSwingHitbox;
 
@@ -67,6 +76,8 @@ public class Player : MonoBehaviour {
 
 	void Start () {
         currentState = State.Base;
+        anim.SetInteger("State", (int)currentState);
+        anim = GetComponent<Animator>();
 
         bIsInvincible = false;
 
@@ -89,6 +100,8 @@ public class Player : MonoBehaviour {
 
         ControllerUpdate();
 
+        //anim.SetInteger("State", (int)currentState);
+        //anim.SetInteger("State", 0);
         
 	}
     void TimerUpdate()
@@ -101,6 +114,7 @@ public class Player : MonoBehaviour {
         if (stunCountdownTimer <= 0 && currentState == State.Stunned)
         {
             currentState = State.Base;
+            
         }
 
         if(invincibilityCountdownTimer <= 0)
@@ -122,6 +136,8 @@ public class Player : MonoBehaviour {
             if (groundedCheck())
             {
                 currentState = State.Base;
+                anim.SetInteger("State", (int)currentState);
+                
             }
         }
         else if (groundSwingTimer < groundSwingCooldown)
@@ -173,6 +189,7 @@ public class Player : MonoBehaviour {
             if (groundedCheck())
             {
                 currentState = State.Base;
+                anim.SetInteger("State", (int)currentState);
             }
         }
 
@@ -188,12 +205,17 @@ public class Player : MonoBehaviour {
             if(groundedCheck())
             {
                 GroundedSwing();
+                currentState = State.Swinging;
+                anim.SetInteger("State", (int)currentState);
+                
             }
             else
             {
                 AirSwing();
+                currentState = State.AirSwinging;
+                anim.SetInteger("State", (int)currentState);
             }
-            currentState = State.Swinging;
+            
         }
     }
 
@@ -206,6 +228,7 @@ public class Player : MonoBehaviour {
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
         currentState = State.Jumping;
+        anim.SetInteger("State", (int)currentState);
     }
 
     bool groundedCheck()
@@ -233,6 +256,7 @@ public class Player : MonoBehaviour {
         invincibilityCountdownTimer = invincibilityTime;
      
         currentState = State.Stunned;
+        anim.SetInteger("State", (int)State.Stunned);
         bIsInvincible = true;
 
     }

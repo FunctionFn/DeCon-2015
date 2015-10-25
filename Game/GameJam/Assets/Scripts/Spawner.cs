@@ -4,14 +4,15 @@ using System.Collections;
 public class Spawner : MonoBehaviour {
     public GameObject enemy;
     public Transform[] spawnPoints;
-    protected float spawnCooldown = 1;
-    protected float timeUntilSpawn = 0;
-    public float spawnMin = .5f;
-    public float spawnMax = 2;
+    protected float spawnCooldown;
+    protected float timeUntilSpawn;
+    public float spawnMin;
+    public float spawnMax;
 
 	// Use this for initialization
-	void Start () {
-
+	void Awake () {
+        spawnCooldown = Random.Range(spawnMin, spawnMax);
+        timeUntilSpawn = spawnCooldown;
 	}
 	
 	// Update is called once per frame

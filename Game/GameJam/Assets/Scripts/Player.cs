@@ -182,7 +182,7 @@ public class Player : MonoBehaviour {
             Jump();
         }
 
-        if(Input.GetButton("Fire1") && currentState != State.Stunned && currentState != State.Swinging)
+        if(Input.GetButtonDown("Fire1") && currentState != State.Stunned && currentState != State.Swinging)
         {
             
             if(groundedCheck())

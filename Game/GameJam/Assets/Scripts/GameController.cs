@@ -1,7 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class GameController : MonoBehaviour {
+
+    public Text scoreText;
+    public Text comboText;
+
 
     public float score;
 
@@ -23,7 +28,8 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        scoreText.text = "Score: " + score.ToString();
+        comboText.text = "Combo: " + combo.ToString();
 	}
 
     public void AddScore(int sc)

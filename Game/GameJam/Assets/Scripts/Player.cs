@@ -17,6 +17,8 @@ public class Player : MonoBehaviour {
 
     public LayerMask whatIsGroundLayer;
 
+    public AudioClip[] hitplayersounds;
+    public AudioClip[] hazardsounds;
 
     public float speed;
     public float speedIncrement;
@@ -268,11 +270,13 @@ public class Player : MonoBehaviour {
         {
             other.GetComponent<BaseEnemy>().Activate();
             GameController.Inst.ResetCombo();
+            AudioSource.PlayClipAtPoint(hitplayersounds[Random.Range(0, 3)], transform.position);
         }
         else if (other.GetComponent<Hazards>())
         {
             if(!other.GetComponent<MoveLeft>() || (other.GetComponent<MoveLeft>() && !bIsInvincible))
                 other.GetComponent<Hazards>().Activate();
+                AudioSource.PlayClipAtPoint(hazardsounds[Random.Range(0, 3)], transform.position);
         }
         else if (other.GetComponent<DeathBox>())
         {

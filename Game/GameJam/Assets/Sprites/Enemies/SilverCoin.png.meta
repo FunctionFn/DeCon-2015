@@ -1,9 +1,33 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 93539ad70f1e44d4c985258d6880b0a2
 timeCreated: 1445748369
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
+=======
+guid: 1727a6adaf5777b409d498089eaa69dd
+timeCreated: 1445746526
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SilverCoin_0
+    21300002: SilverCoin_1
+    21300004: SilverCoin_2
+    21300006: SilverCoin_3
+    21300008: SilverCoin_4
+    21300010: SilverCoin_5
+    21300012: SilverCoin_6
+    21300014: SilverCoin_7
+    21300016: SilverCoin_8
+    21300018: SilverCoin_9
+    21300020: SilverCoin_10
+    21300022: SilverCoin_11
+    21300024: SilverCoin_12
+    21300026: SilverCoin_13
+    21300028: SilverCoin_14
+    21300030: SilverCoin_15
+>>>>>>> origin/master
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +54,22 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
+<<<<<<< HEAD
     aniso: -1
+=======
+    aniso: 16
+>>>>>>> origin/master
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 1
+=======
+  spriteMode: 2
+>>>>>>> origin/master
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +80,171 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+<<<<<<< HEAD
     sprites: []
+=======
+    sprites:
+    - name: SilverCoin_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3216
+        width: 457
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_1
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 3197
+        width: 560
+        height: 899
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_2
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 3160
+        width: 946
+        height: 936
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_3
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 3185
+        width: 879
+        height: 911
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_4
+      rect:
+        serializedVersion: 2
+        x: 2945
+        y: 3208
+        width: 840
+        height: 888
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2279
+        width: 856
+        height: 857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_6
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 2296
+        width: 820
+        height: 839
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_7
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 2277
+        width: 596
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_8
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 2257
+        width: 510
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_9
+      rect:
+        serializedVersion: 2
+        x: 2889
+        y: 2224
+        width: 511
+        height: 911
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 879
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_11
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1293
+        width: 842
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_12
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 1319
+        width: 802
+        height: 881
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_13
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 1349
+        width: 854
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 427
+        width: 849
+        height: 826
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SilverCoin_15
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 399
+        width: 596
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+>>>>>>> origin/master
   spritePackingTag: 
   userData: 
   assetBundleName: 

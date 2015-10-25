@@ -1,9 +1,21 @@
 fileFormatVersion: 2
 guid: 85d7e780acf8b3d458ea5f8b889ce1dc
-timeCreated: 1445744601
+timeCreated: 1445745517
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: CoinWalk4_0
+    21300002: CoinWalk4_1
+    21300004: CoinWalk4_2
+    21300006: CoinWalk4_3
+    21300008: CoinWalk4_4
+    21300010: CoinWalk4_5
+    21300012: CoinWalk4_6
+    21300014: CoinWalk4_7
+    21300016: CoinWalk4_8
+    21300018: CoinWalk4_9
+    21300020: CoinWalk4_10
+    21300022: CoinWalk4_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +42,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +60,127 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: CoinWalk4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3217
+        width: 457
+        height: 879
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinWalk4_1
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 3189
+        width: 512
+        height: 907
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinWalk4_2
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 3179
+        width: 880
+        height: 917
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinWalk4_3
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 3191
+        width: 1641
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinWalk4_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2328
+        width: 1699
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinWalk4_5
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 2325
+        width: 594
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinWalk4_6
+      rect:
+        serializedVersion: 2
+        x: 2291
+        y: 2279
+        width: 558
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinWalk4_7
+      rect:
+        serializedVersion: 2
+        x: 2847
+        y: 1391
+        width: 1128
+        height: 1788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinWalk4_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1335
+        width: 1713
+        height: 912
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinWalk4_9
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 1391
+        width: 854
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinWalk4_10
+      rect:
+        serializedVersion: 2
+        x: 2561
+        y: 1408
+        width: 820
+        height: 839
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinWalk4_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 456
+        width: 507
+        height: 881
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

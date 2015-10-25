@@ -113,7 +113,7 @@ public class Player : MonoBehaviour {
         if(groundSwingTimer < (groundSwingTotalTime - groundSwingStartup) && groundSwingTimer > groundSwingCooldown && !groundSwingHitbox.bIsEnabled)
         {
             groundSwingHitbox.Enable();
-            Debug.Log("Active");
+            //Debug.Log("Active");
         }
         else if (groundSwingTimer <= 0 && currentState != State.Stunned && currentState != State.AirSwinging)
         {
@@ -267,6 +267,7 @@ public class Player : MonoBehaviour {
         if(other.GetComponent<BaseEnemy>() && !bIsInvincible)
         {
             other.GetComponent<BaseEnemy>().Activate();
+            GameController.Inst.ResetCombo();
         }
         else if (other.GetComponent<Hazards>())
         {
@@ -283,6 +284,7 @@ public class Player : MonoBehaviour {
         if (other.gameObject.GetComponent<DeadEnemy>() && !bIsInvincible)
         {
             other.gameObject.GetComponent<DeadEnemy>().Activate();
+            GameController.Inst.AddCombo(1);
         }
     }
 

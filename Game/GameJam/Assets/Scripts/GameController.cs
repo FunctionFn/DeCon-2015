@@ -33,7 +33,7 @@ public class GameController : MonoBehaviour {
 
     public void AddCombo(int co)
     {
-        combo += combo;
+        combo += co;
         Debug.Log(combo);
     }
 
